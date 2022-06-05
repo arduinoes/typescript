@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Comenzando | TypeScript Vue.js</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="Nivel principiantes">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/typescript/assets/css/0.styles.05af0996.css" as="style"><link rel="preload" href="/typescript/assets/js/app.20ae2c8e.js" as="script"><link rel="preload" href="/typescript/assets/js/2.e5b5bdbb.js" as="script"><link rel="preload" href="/typescript/assets/js/11.8aa865be.js" as="script"><link rel="prefetch" href="/typescript/assets/js/10.90d20718.js"><link rel="prefetch" href="/typescript/assets/js/12.d30ff2e2.js"><link rel="prefetch" href="/typescript/assets/js/13.402cc956.js"><link rel="prefetch" href="/typescript/assets/js/14.ff9c9042.js"><link rel="prefetch" href="/typescript/assets/js/15.c5d4120c.js"><link rel="prefetch" href="/typescript/assets/js/3.48ae7e51.js"><link rel="prefetch" href="/typescript/assets/js/4.1a8f7237.js"><link rel="prefetch" href="/typescript/assets/js/5.bb6a4b3f.js"><link rel="prefetch" href="/typescript/assets/js/6.034b101a.js"><link rel="prefetch" href="/typescript/assets/js/7.4401296e.js"><link rel="prefetch" href="/typescript/assets/js/8.3c8f93b5.js"><link rel="prefetch" href="/typescript/assets/js/9.56df714c.js">
+    <link rel="stylesheet" href="/typescript/assets/css/0.styles.05af0996.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/typescript/" class="home-link router-link-active"><!----> <span class="site-name">TypeScript Vue.js</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/typescript/deduccion/" class="nav-link">
+  Deducción
+</a></div><div class="nav-item"><a href="/typescript/interface/" class="nav-link">
+  Asignado Tipos
+</a></div><div class="nav-item"><a href="/typescript/props/" class="nav-link">
+  Props
+</a></div><div class="nav-item"><a href="/typescript/emit/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Emit
+</a></div><div class="nav-item"><a href="https://youtu.be/FAtC9YKy1Rk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canal Youtube
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/typescript/deduccion/" class="nav-link">
+  Deducción
+</a></div><div class="nav-item"><a href="/typescript/interface/" class="nav-link">
+  Asignado Tipos
+</a></div><div class="nav-item"><a href="/typescript/props/" class="nav-link">
+  Props
+</a></div><div class="nav-item"><a href="/typescript/emit/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Emit
+</a></div><div class="nav-item"><a href="https://youtu.be/FAtC9YKy1Rk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canal Youtube
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Comenzando</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/typescript/emit/#tipos-en-los-emit" class="sidebar-link">Tipos en los Emit</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/typescript/emit/#emit-component-controlboton" class="sidebar-link">Emit Component &gt; ControlBoton</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="comenzando"><a href="#comenzando" class="header-anchor">#</a> Comenzando</h1> <h2 id="tipos-en-los-emit"><a href="#tipos-en-los-emit" class="header-anchor">#</a> Tipos en los Emit</h2> <h3 id="emit-component-controlboton"><a href="#emit-component-controlboton" class="header-anchor">#</a> Emit Component &gt; ControlBoton</h3> <p>Con <strong>defineEmits</strong> + <strong>&lt;{ }&gt;</strong> estamos utilizando <strong>typescript</strong>,<strong>defineEmits</strong> es un tipo de función de vue.js <strong>macros del compilador</strong> que solo se pueden usar dentro de <strong>&lt; script setup &gt;</strong>. Observa que el evento tiene dos parámetros, el <strong>nombre</strong> y el <strong>payload</strong> y no devuelve nada <strong>: void</strong></p> <p><strong>ControlBoton.vue</strong></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">setup</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+
+<span class="token keyword">const</span> emit <span class="token operator">=</span> defineEmits<span class="token operator">&lt;</span><span class="token punctuation">{</span>
+    <span class="token comment">// nombre del evento, Payload dato</span>
+    <span class="token punctuation">(</span>event<span class="token operator">:</span> <span class="token string">'incrementar'</span><span class="token punctuation">,</span> num<span class="token operator">:</span> number<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+    <span class="token punctuation">(</span>event<span class="token operator">:</span> <span class="token string">'reiniciarContador'</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>emit(<span class="token punctuation">'</span>incrementar<span class="token punctuation">'</span>, 2)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Incrementar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>emit(<span class="token punctuation">'</span>reiniciarContador<span class="token punctuation">'</span>)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Reiniciar contador<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Component &gt; Contador.vue</p> <p>script</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> ControlBoton <span class="token keyword">from</span> <span class="token string">'../components/ControlBoton.vue'</span>
+</code></pre></div><p>template</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>control-boton</span>
+    <span class="token attr-name">@incrementar</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>incrementar<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">@reiniciar-contador</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>contador = 0<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>control-boton</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/typescript/assets/js/app.20ae2c8e.js" defer></script><script src="/typescript/assets/js/2.e5b5bdbb.js" defer></script><script src="/typescript/assets/js/11.8aa865be.js" defer></script>
+  </body>
+</html>
